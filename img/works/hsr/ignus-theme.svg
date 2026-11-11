@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad_ignus-theme" cx="60%" cy="40%" r="80%" fx="50%" fy="30%">
+      <stop offset="0%" stop-color="#23272F" />
+      <stop offset="60%" stop-color="#17191C" />
+      <stop offset="100%" stop-color="#0F1012" />
+    </radialGradient>
+    <linearGradient id="accentGrad_ignus-theme" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9E67B" />
+      <stop offset="100%" stop-color="#FF6B6B" />
+    </linearGradient>
+    <pattern id="grid_ignus-theme" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+    <filter id="glow_ignus-theme" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bgGrad_ignus-theme)" />
+  <rect width="1280" height="720" fill="url(#grid_ignus-theme)" />
+
+  <!-- Ambient glow spheres -->
+  <circle cx="850" cy="280" r="240" fill="#C9E67B" opacity="0.08" filter="url(#glow_ignus-theme)" />
+  <circle cx="350" cy="450" r="200" fill="#FF6B6B" opacity="0.05" filter="url(#glow_ignus-theme)" />
+
+  <!-- Film / Post-Production decorative elements -->
+  <g opacity="0.3">
+    <!-- Viewfinder crop marks -->
+    <path d="M 60 100 L 60 60 L 100 60" fill="none" stroke="#F2F0E9" stroke-width="2" />
+    <path d="M 1220 100 L 1220 60 L 1180 60" fill="none" stroke="#F2F0E9" stroke-width="2" />
+    <path d="M 60 620 L 60 660 L 100 660" fill="none" stroke="#F2F0E9" stroke-width="2" />
+    <path d="M 1220 620 L 1220 660 L 1180 660" fill="none" stroke="#F2F0E9" stroke-width="2" />
+
+    <!-- Center crosshair -->
+    <line x1="630" y1="360" x2="650" y2="360" stroke="#F2F0E9" stroke-width="1" />
+    <line x1="640" y1="350" x2="640" y2="370" stroke="#F2F0E9" stroke-width="1" />
+
+    <!-- Timecode & framerate -->
+    <text x="1200" y="90" font-family="'JetBrains Mono', monospace" font-size="14" fill="#A5ABB6" text-anchor="end">24.00 FPS · 4K DCI</text>
+    <text x="1200" y="115" font-family="'JetBrains Mono', monospace" font-size="14" fill="#C9E67B" text-anchor="end">REC ● 00:01:24:12</text>
+  </g>
+
+  <!-- Category & Badges -->
+  <g transform="translate(100, 160)">
+    <!-- Category Pill -->
+    <rect x="0" y="0" width="auto" height="34" rx="6" fill="#1F2227" stroke="#30343A" stroke-width="1"/>
+    <text x="18" y="22" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600" fill="#C9E67B" letter-spacing="1">FESTIVAL BRANDING · PROMOTIONAL VIDEO</text>
+
+    <!-- Badge Pill -->
+    <g transform="translate(420, 0)">
+      <rect x="0" y="0" width="220" height="34" rx="6" fill="rgba(201, 230, 123, 0.12)" stroke="#C9E67B" stroke-width="1"/>
+      <text x="110" y="22" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#F2F0E9" text-anchor="middle">Flagship College Fest</text>
+    </g>
+  </g>
+
+  <!-- Big Title -->
+  <text x="100" y="290" font-family="'Space Grotesk', sans-serif" font-size="78" font-weight="800" fill="#F2F0E9" letter-spacing="-2">
+    IGNUS REVEAL
+  </text>
+
+  <!-- Subtitle -->
+  <text x="100" y="345" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="600" fill="#C9E67B">
+    IIT Jodhpur Cultural Festival Theme
+  </text>
+
+  <!-- Description -->
+  <text x="100" y="405" font-family="'Inter', sans-serif" font-size="20" fill="#A5ABB6">
+    Visual storytelling, kinetic transitions & impact
+  </text>
+
+  <!-- Bottom Timeline Bar representation -->
+  <g transform="translate(100, 560)">
+    <rect x="0" y="0" width="1080" height="60" rx="8" fill="#1A1C20" stroke="#30343A" stroke-width="1" />
+    
+    <!-- Timeline tracks -->
+    <rect x="10" y="8" width="220" height="20" rx="4" fill="#C9E67B" opacity="0.8" />
+    <text x="25" y="23" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#17191C">V1 · Narrative Edit</text>
+
+    <rect x="240" y="8" width="310" height="20" rx="4" fill="#FF6B6B" opacity="0.8" />
+    <text x="255" y="23" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#FFFFFF">V2 · Color Grading & VFX</text>
+
+    <rect x="560" y="8" width="180" height="20" rx="4" fill="#64B5F6" opacity="0.8" />
+    <text x="575" y="23" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#17191C">A1 · Sound Design</text>
+
+    <rect x="750" y="8" width="320" height="20" rx="4" fill="#AB47BC" opacity="0.8" />
+    <text x="765" y="23" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#FFFFFF">Master Output · 4K</text>
+
+    <!-- Playhead -->
+    <line x1="380" y1="0" x2="380" y2="60" stroke="#F2F0E9" stroke-width="2" />
+    <polygon points="374,0 386,0 380,8" fill="#F2F0E9" />
+
+    <!-- Audio waveform aesthetic -->
+    <path d="M 10 44 Q 50 35, 100 44 T 200 44 T 300 44 T 400 44 T 500 44 T 600 44 T 700 44 T 800 44 T 900 44 T 1070 44" fill="none" stroke="#505664" stroke-width="1.5" />
+  </g>
+
+  <!-- Big Decorative Icon in background -->
+  <text x="1150" y="440" font-size="140" opacity="0.25" text-anchor="end">🔥</text>
+</svg>

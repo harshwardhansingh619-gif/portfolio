@@ -1,0 +1,14 @@
+# Logs & OS artifacts
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Scratch / temporary scripts
+convert_webp.ps1
+find_sections.js
+generate-project-svgs.js
+
+# Node
+node_modules/
+
